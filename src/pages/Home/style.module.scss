@@ -1,0 +1,28 @@
+.header{
+    position: fixed;
+    height: 47px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text_pokemons{
+        color: rgb(91, 154, 170);
+        font-weight: bold;
+        margin: 10px;
+    }
+}
+
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(91, 154, 170);
+    font-weight: bold;
+    font-size: 50px;
+
+    img {
+        width: 120px;
+    }
+}

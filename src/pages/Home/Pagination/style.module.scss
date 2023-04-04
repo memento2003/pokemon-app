@@ -1,0 +1,30 @@
+.pagination{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.page_item, .btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(110, 110, 110);
+    margin: 0px 2px;
+    height: 34px;
+    width: 34px;
+    border-radius: 20px;
+}
+
+.btn_prev, .btn_next{
+    font-size: 20px;
+}
+
+.selected_page{
+    background-color: rgb(91, 154, 170);
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: white;
+}

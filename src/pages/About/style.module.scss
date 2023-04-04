@@ -1,0 +1,149 @@
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(91, 154, 170);
+    font-weight: bold;
+    font-size: 50px;
+
+    img {
+        width: 120px;
+    }
+}
+
+.About{
+    display: block;
+}
+
+.container_head{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid rgb(91, 154, 170);
+    .btn {
+        display: flex;
+        width: min-content;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(91, 154, 170);
+        border-radius: 25px;
+        padding: 5px 10px;
+    }
+    .name_head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 15px;
+    }
+    .container_id{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        .id_pokemon{
+            color: white;
+            background-color: rgb(91, 154, 170);
+            border-radius: 25px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+.container_main{
+    display: flex;
+    margin: 15px;
+    .img_pokemon{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+    }
+    .container_info{
+        display: block;
+        width: 50%;
+        color: white;
+        .tabs{
+            display: flex;
+            justify-content: space-between;
+            height: max-content;
+            :first-child{
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+            }
+            :last-child{
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+            }
+            .tab{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                width: 33.33%;
+                border: 1px solid rgb(60, 103, 114);
+                background-color: rgb(91, 154, 170);
+                padding: 5px 0;
+                font-size: 18px;
+            }
+            .selectTab{
+                background-color: rgb(60, 103, 114);
+            }
+        }
+        .info{
+            width: 100%;
+            height: max-content;
+            background-color: rgb(91, 154, 170);
+            border: 1px solid rgb(60, 103, 114);
+            border-radius: 25px;
+            margin-top: 15px;
+            padding: 5px;
+            font-size: 18px;
+            .content{
+                display: none;
+                margin: 10px;
+                .info_item{
+                    display: flex;
+                    justify-content: space-between;
+                    height: max-content;
+                    padding: 5px;
+                    border-bottom: 1px solid rgb(60, 103, 114);
+                    .info_title{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 5px;
+                        margin: 7px;
+                    }
+                    .info_datas{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .info_data{
+                            background-color: rgb(60, 103, 114);
+                            border-radius: 15px;
+                            margin-left: 5px;
+                            padding: 7px;
+                            height: max-content;
+                        }
+                    }
+                    img{
+                        height: 150px;
+                    }
+                }
+            }
+            .active_content{
+                display: block;
+                :last-child{
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
